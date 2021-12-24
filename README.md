@@ -14,6 +14,7 @@ VenusBot is an open source, general purpose Discord bot built with Discord.js
 |.help       |Help command                         |
 |.github     |Sends the bot's GitHub repository    |
 |.ping       |Sends the bot's current ping         |
+|.coinflip   |Flips a coin                         |
 |.garfield   |Sends a random Garfield comic        |
 |.serverinfo |Display's the current server's info  |
 |.warn       |Warns a user                         |
