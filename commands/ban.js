@@ -6,7 +6,7 @@ module.exports = {
         const banReason = args.slice(1).join(" ");
 
         if (!user) {
-            return message.channel.send(```Invalid command usage, try using it like this instead:\n\n.ban <member> [reason]```);
+            return message.channel.send("```Invalid command usage, try using it like this instead:\n\n.ban <member> [reason]```");
         };
 
         const member = message.guild.members.cache.get(user.id);

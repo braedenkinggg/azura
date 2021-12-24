@@ -1,7 +1,9 @@
+const dotenv = require('dotenv').config();
 const fs = require('fs');
 const { Client, Collection, Intents } = require('discord.js');
 
-const { botToken, prefix } = require('./config/config.json');
+const BOT_TOKEN = process.env.BOT_TOKEN;
+const PREFIX = process.env.PREFIX;
 
 const client = new Client({ intents: [
     Intents.FLAGS.GUILDS, 
@@ -12,7 +14,7 @@ const client = new Client({ intents: [
 ] });
 
 client.commands = new Collection();
-client.prefix = prefix;
+client.prefix = PREFIX;
 
 client.on('ready', () => {
     console.log(`Logged in as: ${client.user.tag}`);
@@ -29,9 +31,9 @@ for (const file of commandFiles) {
 client.on('guildMemberAdd', async member => member.guild.systemChannel.send(`Welcome ${member}!`));
 client.on('messageCreate', async message => {
     if (message.author.bot) return;
-    if (!message.content.startsWith(prefix)) return;
+    if (!message.content.startsWith(PREFIX)) return;
 
-    const args = message.content.slice(prefix.length).trim().split(/ +/);
+    const args = message.content.slice(PREFIX.length).trim().split(/ +/);
     const commandName = args.shift().toLowerCase();
 
     if (commandName.length === 0) return;
@@ -48,4 +50,4 @@ client.on('messageCreate', async message => {
     };
 });
 
-client.login(botToken);
+client.login(BOT_TOKEN);
