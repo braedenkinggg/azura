@@ -1,5 +1,5 @@
 # VenusBot
-![venus](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Venus_globe_-_transparent_background.png/1200px-Venus_globe_-_transparent_background.png)
+![venus](https://cdn.discordapp.com/app-icons/879933413543542834/7b85d355aa0c7ced14159dc5339feced.png?size=256)
 
 # Table of Contents
 - [About](#about)
