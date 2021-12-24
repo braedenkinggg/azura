@@ -1,6 +1,6 @@
 {
   "name": "venusbot",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "VenusBot is an open source, general purpose Discord bot built with Discord.js",
   "main": "app.js",
   "scripts": {
