@@ -1,22 +1,22 @@
 {
-  "name": "venusbot",
+  "name": "azura",
   "version": "1.0.0",
-  "description": "VenusBot is an open source, general purpose Discord bot built with Discord.js",
-  "main": "app.js",
+  "description": "Azura is an open source, general purpose Discord bot built with Discord.js",
+  "main": "./src/index.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
   },
   "repository": {
-    "type": "git",
+    "type": "github",
     "url": "https://github.com/braedenkinggg/VenusBot.git"
   },
   "keywords": [
-    "node.js", 
-    "discord.js", 
-    "javascript", 
-    "discord", 
-    "bot"
+    "node.js",
+    "discord.js",
+    "javascript",
+    "discord",
+    "discord-bot"
   ],
   "author": "Braeden King",
   "license": "GPL-2.0",
@@ -25,12 +25,16 @@
     "npm": "8.3.0"
   },
   "dependencies": {
-    "@discordjs/builders": "^0.7.0",
-    "@discordjs/rest": "^0.1.0-canary.0",
-    "discord-api-types": "^0.24.0",
-    "discord.js": "^13.2.0",
+    "@discordjs/builders": "^0.12.0",
+    "@discordjs/opus": "^0.7.0",
+    "@discordjs/rest": "^0.3.0",
+    "axios": "^0.26.0",
+    "cheerio": "^1.0.0-rc.10",
+    "discord-api-types": "^0.27.3",
+    "discord.js": "^13.6.0",
     "dotenv": "^10.0.0",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "request-promise": "^4.2.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
