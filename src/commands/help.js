@@ -22,12 +22,18 @@ module.exports = {
                     .addField(name="`~serverinfo`", value="Sends the current servers information");
     
                 break;
-
             case "fun":
                 helpMenu
                     .setTitle("Fun")
                     .addField(name="`~garfield`", value="Sends a random garfield comic")
                     .addField(name="`~goodbot`", value="Tells Azura what a good bot she is");
+
+                break;
+            case "info":
+                helpMenu
+                    .setTitle("Info")
+                    .addField(name="`~sourcecode`", value="Sends a link to Azura's source code")
+                    .addField(name="`~creator`", value="Sends information regarding the creator of Azura");
 
                 break;
             default:
@@ -36,7 +42,8 @@ module.exports = {
                     .setDescription("Help has arrived!")
                     .addField(name="Moderation", value="`~help mod`", inline=true)
                     .addField(name="Utilities", value="`~help utils`", inline=true)
-                    .addField(name="Fun", value="`~help fun`", inline=true);
+                    .addField(name="Fun", value="`~help fun`", inline=true)
+                    .addField(name="Information", value="`~help info`");
         }
 
         await message.channel.send({embeds: [helpMenu]});

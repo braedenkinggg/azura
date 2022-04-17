@@ -62,7 +62,7 @@ client.on("messageCreate", async (message) => {
             .setDescription(err.message)
             .setColor(0xff0000);
         
-        message.channel.send({embeds: [errorEmbed]});
+        await message.channel.send({embeds: [errorEmbed]});
     }
 });
 
